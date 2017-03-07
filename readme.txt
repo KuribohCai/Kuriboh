@@ -1,1 +1,1 @@
-This is a day who use the git first! 
+This is the first time to use Git day !
