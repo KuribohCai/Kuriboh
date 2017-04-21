@@ -36,6 +36,8 @@ public class MainActivity extends FragmentActivity {
     LinearLayout mActivityMain;
     @BindView(R.id.button_sticktab)
     Button mButtonSticktab;
+    @BindView(R.id.button_application)
+    Button mButtonApplication;
 
 
     @Override
@@ -52,7 +54,7 @@ public class MainActivity extends FragmentActivity {
      */
     public native String stringFromJNI();
 
-    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main})
+    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_banner:
@@ -68,6 +70,9 @@ public class MainActivity extends FragmentActivity {
                 startActivity(new Intent(getApplicationContext(), MoreTabActivity.class));
                 break;
             case R.id.button_sticktab:
+                startActivity(new Intent(getApplicationContext(), SpringActivity.class));
+                break;
+            case R.id.button_application:
                 startActivity(new Intent(getApplicationContext(), SpringActivity.class));
                 break;
             case R.id.activity_main:
