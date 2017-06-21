@@ -49,4 +49,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="通用框架"/>
+    <Button
+        android:id="@+id/button_waterfall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="瀑布流"/>
+
+    <Button
+        android:id="@+id/button_bannersimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="便利轮播图"/>
+    <Button
+        android:id="@+id/button_viewpagerphoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片viewpager"/>
+    <Button
+        android:id="@+id/button_photobrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片点击放大浏览"/>
 </LinearLayout>

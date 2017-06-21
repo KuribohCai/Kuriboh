@@ -8,10 +8,14 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.studio.cai.mysuperdemo.ui.BannerActivity;
+import com.studio.cai.mysuperdemo.ui.BannerSimpleActivity;
 import com.studio.cai.mysuperdemo.ui.GuideActivity;
 import com.studio.cai.mysuperdemo.ui.MoreTabActivity;
 import com.studio.cai.mysuperdemo.ui.SpringActivity;
 import com.studio.cai.mysuperdemo.ui.TabMainActivity;
+import com.studio.cai.mysuperdemo.ui.WaterFallActivity;
+import com.studio.cai.mysuperdemo.widget.photo.PhotoBrowse;
+import com.studio.cai.mysuperdemo.widget.photo.ViewPagerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -38,6 +42,8 @@ public class MainActivity extends FragmentActivity {
     Button mButtonSticktab;
     @BindView(R.id.button_application)
     Button mButtonApplication;
+    @BindView(R.id.button_waterfall)
+    Button mButtonWaterfall;
 
 
     @Override
@@ -54,7 +60,7 @@ public class MainActivity extends FragmentActivity {
      */
     public native String stringFromJNI();
 
-    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application})
+    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_banner:
@@ -76,6 +82,19 @@ public class MainActivity extends FragmentActivity {
                 startActivity(new Intent(getApplicationContext(), SpringActivity.class));
                 break;
             case R.id.activity_main:
+                break;
+            case R.id.button_waterfall:
+                startActivity(new Intent(getApplicationContext(), WaterFallActivity.class));
+                break;
+            case R.id.button_bannersimple:
+                startActivity(new Intent(getApplicationContext(), BannerSimpleActivity.class));
+                break;
+            case R.id.button_viewpagerphoto:
+                startActivity(new Intent(this, ViewPagerActivity.class));
+                break;
+
+            case R.id.button_photobrowse:
+                startActivity(new Intent(this, PhotoBrowse.class));
                 break;
         }
     }
