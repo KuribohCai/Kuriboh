@@ -60,7 +60,7 @@ public class MainActivity extends FragmentActivity {
      */
     public native String stringFromJNI();
 
-    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple})
+    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple,R.id.button_viewpagerphoto,R.id.button_photobrowse})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_banner:
@@ -90,11 +90,11 @@ public class MainActivity extends FragmentActivity {
                 startActivity(new Intent(getApplicationContext(), BannerSimpleActivity.class));
                 break;
             case R.id.button_viewpagerphoto:
-                startActivity(new Intent(this, ViewPagerActivity.class));
+                startActivity(new Intent(getApplicationContext(), ViewPagerActivity.class));
                 break;
 
             case R.id.button_photobrowse:
-                startActivity(new Intent(this, PhotoBrowse.class));
+                startActivity(new Intent(getApplicationContext(), PhotoBrowse.class));
                 break;
         }
     }

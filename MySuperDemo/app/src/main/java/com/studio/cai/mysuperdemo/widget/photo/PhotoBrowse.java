@@ -2,6 +2,7 @@ package com.studio.cai.mysuperdemo.widget.photo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -18,7 +19,7 @@ import com.studio.cai.mysuperdemo.R;
 /**
  * Created by liuheng on 2015/8/19.
  */
-public class PhotoBrowse extends Activity {
+public class PhotoBrowse extends FragmentActivity {
 
     int[] imgs = new int[]{R.mipmap.aaa, R.mipmap.bbb, R.mipmap.ccc, R.mipmap.ddd, R.mipmap.ic_launcher, R.mipmap.image003};
 

@@ -1,6 +1,7 @@
 package com.studio.cai.mysuperdemo.widget.photo;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -13,8 +14,7 @@ import com.studio.cai.mysuperdemo.mvp.view.BaseActivity;
 /**
  * Created by liuheng on 2015/8/19.
  */
-public class ViewPagerActivity extends BaseActivity {
-
+public class ViewPagerActivity extends FragmentActivity {
     private ViewPager mPager;
 
     private int[] imgsId = new int[]{R.mipmap.aaa, R.mipmap.bbb, R.mipmap.ccc, R.mipmap.ddd, R.mipmap.ic_launcher, R.mipmap.image003};
