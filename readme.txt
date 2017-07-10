@@ -1,1 +1,7 @@
-This is the first time to use Git day !!
+这是一个Demo集合 : 
+轮播
+引导
+主界面
+标签
+瀑布流
+图片浏览
