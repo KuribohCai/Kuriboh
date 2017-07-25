@@ -10,4 +10,7 @@
     <color name="tab_top2_text_2">#fff</color>
     <color name="white">#fff</color>
 
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 </resources>

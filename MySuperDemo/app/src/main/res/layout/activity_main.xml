@@ -70,4 +70,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="图片点击放大浏览"/>
+    <Button
+        android:id="@+id/button_retrofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mvp+rxjava+retrofit"/>
 </LinearLayout>

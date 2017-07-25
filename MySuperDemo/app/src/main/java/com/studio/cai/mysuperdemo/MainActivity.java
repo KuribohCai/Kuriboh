@@ -3,10 +3,12 @@ package com.studio.cai.mysuperdemo;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.studio.cai.mysuperdemo.rxjava_retrofit.ElementaryActivity;
 import com.studio.cai.mysuperdemo.ui.BannerActivity;
 import com.studio.cai.mysuperdemo.ui.BannerSimpleActivity;
 import com.studio.cai.mysuperdemo.ui.GuideActivity;
@@ -21,7 +23,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -60,7 +62,7 @@ public class MainActivity extends FragmentActivity {
      */
     public native String stringFromJNI();
 
-    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple,R.id.button_viewpagerphoto,R.id.button_photobrowse})
+    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple,R.id.button_viewpagerphoto,R.id.button_photobrowse,R.id.button_retrofit})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_banner:
@@ -95,6 +97,9 @@ public class MainActivity extends FragmentActivity {
 
             case R.id.button_photobrowse:
                 startActivity(new Intent(getApplicationContext(), PhotoBrowse.class));
+                break;
+            case R.id.button_retrofit:
+                startActivity(new Intent(getApplicationContext(), ElementaryActivity.class));
                 break;
         }
     }

@@ -6,4 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_spring">SpringActivity</string>
 
+    <string name="loading_failed">数据加载失败</string>
+
 </resources>
