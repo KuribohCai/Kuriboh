@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.studio.cai.mysuperdemo.databinding.DataBindingActivity;
 import com.studio.cai.mysuperdemo.rxjava_retrofit.ElementaryActivity;
 import com.studio.cai.mysuperdemo.ui.BannerActivity;
 import com.studio.cai.mysuperdemo.ui.BannerSimpleActivity;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public native String stringFromJNI();
 
-    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple,R.id.button_viewpagerphoto,R.id.button_photobrowse,R.id.button_retrofit})
+    @OnClick({R.id.button_banner, R.id.button_guide, R.id.button_main, R.id.button_tab,R.id.button_sticktab, R.id.activity_main,R.id.button_application,R.id.button_waterfall,R.id.button_bannersimple,R.id.button_viewpagerphoto,R.id.button_photobrowse,R.id.button_retrofit,R.id.button_databinding})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.button_banner:
@@ -100,6 +101,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.button_retrofit:
                 startActivity(new Intent(getApplicationContext(), ElementaryActivity.class));
+                break;
+            case R.id.button_databinding:
+                startActivity(new Intent(getApplicationContext(), DataBindingActivity.class));
                 break;
         }
     }
